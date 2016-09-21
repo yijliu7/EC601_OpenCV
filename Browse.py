@@ -56,7 +56,7 @@ if __name__ == '__main__':
         zoom = cv2.getRectSubPix(img, (1200, 900), (x+0.5, y+0.5))
         cv2.imshow('zoom', zoom)
 
-    cv2.imshow('preview', small)
-    cv2.setMouseCallback('preview', onmouse)
+    cv2.imshow('original', small)
+    cv2.setMouseCallback('original', onmouse)
     cv2.waitKey()
 cv2.destroyAllWindows()
