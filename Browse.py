@@ -53,7 +53,7 @@ if __name__ == '__main__':
         h, w = img.shape[:2]
         h1, w1 = small.shape[:2]
         x, y = 1.0*x*h/h1, 1.0*y*h/h1
-        zoom = cv2.getRectSubPix(img, (800, 600), (x+0.5, y+0.5))
+        zoom = cv2.getRectSubPix(img, (1200, 900), (x+0.5, y+0.5))
         cv2.imshow('zoom', zoom)
 
     cv2.imshow('preview', small)
